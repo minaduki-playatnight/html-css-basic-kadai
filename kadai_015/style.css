@@ -1,0 +1,49 @@
+/*フォントサイズ。ルート要素を20pxにする*/
+html{
+    font-size:20px;
+}
+
+body{
+    /*フォントの種類指定*/
+    font-family:"Arial", "Meiryo", sans-serif;
+
+    /*文字を中央ぞろえ。全体のためbodyに記載*/
+    text-align: center;
+}
+
+/*h1のフォントなど調整*/
+h1{
+  /*googleフォント指定。また、総称フォント指定。sans-serif*/
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /*フォントサイズをルート要素の2倍*/
+    font-size:2rem;
+
+  /*文字間指定。文字に対して1.2倍*/
+    letter-spacing:1.2em;
+
+  /*影をつける。大きさ、色は自由*/
+    text-shadow:3px 3px 3px lightgreen;
+
+  /*3pxでカラーrgb(115, 115, 114)）の実線をつける*/
+    border-bottom:solid 3px rgb(115,115,114)
+
+  /*h1の装飾は以上*/
+}
+
+/*フォントカラー指定用*/
+.blue{
+    color:skyblue;
+}
+
+.pink{
+    color:rgb(255,192,203);
+}
+
+/*div内の子要素<p>内の文字を太字にする*/
+#basic p{
+    font-weight: bold;
+}
