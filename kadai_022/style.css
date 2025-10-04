@@ -1,0 +1,111 @@
+/*スタイル下準備*/
+
+h1{
+    margin:0;
+}
+
+p{
+    margin:0;
+    font-size: 20px;
+}
+
+body{
+    margin:0;
+}
+
+a{
+    font-size: 20px;
+}
+
+/*ヘッダー部分のスタイル*/
+header{
+    margin-bottom: 20px;
+    background-color: rgb(244,79,79);
+    text-align: center;
+}
+
+header h1{
+    color: rgb(255,255,255);
+}
+
+/*main要素内のスタイル*/
+/*main全体*/
+main{
+    margin:10px;
+}
+
+/*parent要素内*/
+#parent{
+    display:flex;
+    justify-content: space-around;
+}
+
+/*contents要素内*/
+.contents{
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(238,204,204);
+    flex-basis: 25%;
+    padding:10px 15px;
+    margin:20px 0;
+    text-align: center; 
+}
+
+/*h2要素内*/
+h2{
+    font-size: 25px;
+    border-bottom:dotted 3px rgb(236,122,122);
+}
+
+h2::before{
+    content:"●";
+    color:rgb(239,111,139);
+}
+
+/*class名contents内の2番目のP要素内のテキストの中で一番目の文字のみスタイル設定*/
+.contents p:nth-of-type(2)::first-letter{
+    font-weight: bold;
+    color:rgb(97,206,249);
+}
+
+/*contents内のimg要素にスタイル設定*/
+.contents img{
+    margin:10px 0;
+    width:70%;
+}
+
+/*フッター調整*/
+footer{
+    background-color: rgb(244,79,79);
+    text-align: center;
+}
+
+footer a {
+    color:rgb(255,255,255);
+    text-align: center;
+}
+
+footer a:visited{
+    color:rgb(193,234,251); 
+}
+
+footer a:hover{
+    color:rgb(245,178,168); 
+}
+
+/*レスポンシブデザイン対応。768px以下でブレークポイント*/
+@media screen and (max-width: 768px){
+    h2{
+        font-size:30px;
+    }
+
+    p{
+        font-size:25px;
+    }
+
+    #parent{
+        flex-direction:column;
+    }
+}
+
+
